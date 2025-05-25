@@ -1,0 +1,30 @@
+[
+    {
+    "PropertyGroupId": "kinesis.analytics.flink.run.options",
+    "PropertyMap": {
+      "python": "main.py",
+      "jarfile": "lib/pyflink-dependencies.jar"
+     }
+    },
+    {
+      "PropertyGroupId": "PlayerBetsStream",
+      "PropertyMap": {
+          "stream.name": "PlayerBetsStreamInput",
+          "aws.region": "us-east-1"
+      }
+    },
+    {
+        "PropertyGroupId": "GameResultsStream",
+        "PropertyMap": {
+            "stream.name": "GameResultsStreamInput",
+            "aws.region": "us-east-1"
+        }
+    },
+    {
+        "PropertyGroupId": "OutputStream",
+        "PropertyMap": {
+            "stream.name": "ProcessedBetsStreamOutput",
+            "aws.region": "us-east-1"
+        }
+    }
+  ]
